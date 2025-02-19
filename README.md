@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Finance Visualizer
 
-## Getting Started
+## Overview
+Personal Finance Visualizer is a web application that helps users track expenses, analyze spending habits, and manage their budgets effectively. It provides interactive charts, transaction management, and insightful reports.
 
-First, run the development server:
+## Features
+- **Dashboard**: Overview of recent transactions and spending insights.
+- **Expense Tracking**: Add, edit, and delete transactions.
+- **Budgeting**: Manage budgets for different spending categories.
+- **Visual Analytics**: Pie charts and breakdowns for better financial insights.
+- **Responsive Design**: Works across all devices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+- **Frontend**: Next.js, React, shadcn/ui, Tailwind CSS, Recharts
+- **Backend**: Next.js API Routes (Node.js, Express-like routing)
+- **Database**: MongoDB (via Mongoose)
+- **State Management**: React Hooks, Context API
+
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ankit-o07/Personal-Finance-Visualizer.git
+   cd personal-finance-visualizer
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## API Endpoints
+- `GET /api/transactions` - Fetch all transactions.
+- `POST /api/transactions` - Add a new transaction.
+- `PATCH /api/transactions/:id` - Update a transaction.
+- `DELETE /api/transactions/:id` - Delete a transaction.
+- `GET /api/categories` - Fetch all categories.
+
+## Project Structure
+```
+public/
+src/
+  ├── app/
+  ├── components/
+  ├── lib/
+  ├── models/
+  ├── config/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
+### Dashboard
+![Dashboard Screenshot](image.png)
+![Budget vs Actual Expenses](image-2.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### category
+![alt text](image-3.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Home Page
+![Home Screenshot](image-4.png)
+![Side bar](image-1.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Transactions List
+![Transactions List Screenshot](image-3.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contribution
+Feel free to open issues or contribute by submitting a pull request.
 
-## Deploy on Vercel
+## Contribution
+Feel free to open issues or contribute by submitting a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
