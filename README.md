@@ -3,7 +3,7 @@
 ## Overview
 Personal Finance Visualizer is a web application that helps users track expenses, analyze spending habits, and manage their budgets effectively. It provides interactive charts, transaction management, and insightful reports.
 ##live 
-https://personal-finance-visualizer-nine.vercel.app/dashboard
+https://personal-finance-visualizer-nine.vercel.app/
 ## Features
 - **Dashboard**: Overview of recent transactions and spending insights.
 - **Expense Tracking**: Add, edit, and delete transactions.
